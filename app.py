@@ -13,7 +13,7 @@ model_path = '6xxxx_mnist_model.keras'
 if not os.path.exists(model_path):
     st.error(f"Model file '{model_path}' not found. Please ensure the model is saved correctly.")
 else:
-    model = tf.keras.models.load_model(model_path)
+    model = tf.keras.models.load_model('path/to/your/model.h5')
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
